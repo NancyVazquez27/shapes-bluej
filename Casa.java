@@ -1,3 +1,10 @@
+/**
+ * Esta clase se realizo con la finalidad de crear la imagende una casa
+ * con el apoyo de distintas figuaras.
+ * 
+ * @author Nancy Vazquez
+ * @version 08.23.17
+ */
 class Casa
 {
     // varibles de instancia
@@ -14,7 +21,12 @@ class Casa
         pared=new Square();
         puerta=new Square();
     }
-    
+    /**
+     * Este metodo se creo para realizar acciones sobre las figuras
+     * que mostraran la casa.
+     * No contine parametros
+     * No retorna nada
+     */
     // Construtor
     void dibujate()
     {
@@ -28,6 +40,12 @@ class Casa
         puerta.changeColor("blue");
     }
     
+    /**
+     * Este metodo se creo con la finalidad de que cada una de las figuras
+     * que en conjunto se posicionen para poder mostrar la casa en forma.
+     * No recibe parametros
+     * No retorna nada.
+     */
     // Constructor
     void acomodate()
     {
@@ -51,6 +69,12 @@ class Casa
         ventana.moveHorizontal(16);
     }
    
+    /**
+     * Este metodo fue creado con la finalidad de 
+     * mover a cierta posicion todas las figuras que simularan mostrar una segunda casa.
+     * No recibe parametros
+     * No retorna nada.
+     */
     void mueveIzquierda()
     {
         pared.moveHorizontal(100);
